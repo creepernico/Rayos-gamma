@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RAYOS GAMMA</title>
+    <link href="field_image_estallido_ray" rel="ICON">
+    <link rel="icon" href="https://rinconeducativo.org/wp-content/uploads/2016/10/field_image_estallido_ray.jpg" type="image/x-icon">
+    <style>
+        /* General */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f0f4f8; /* Fondo pastel suave */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Barra de navegación */
+        .Menu {
+            background-color: #a3c9f1; /* Color pastel suave */
+            padding-bottom: 22px;
+            width: 100%;
+            margin: 0 auto;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        .Menu ul {
+            list-style: none;
+            display: flex;
+            justify-content: center; /* Centra el menú */
+            align-items: center;
+            background-color: #eec7e9; /* Verde pastel */
+            border-radius: 40px;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .Menu li {
+            flex: 1;
+        }
+
+        .Menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 18px 20px;
+            font-size: 20px;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .Menu a:hover {
+            background-color: #f7d6e0; /* Rosa pastel */
+            color: #333;
+            padding: 18px 22px;
+        }
+
+        .Menu .pagprinci {
+            background-color: #4e91d4; /* Color azul pastel */
+            text-shadow: 0.5px 0px 0px black;
+        }
+
+        .Menu .pagprinci:hover {
+            text-shadow: none;
+        }
+
+        /* Fondo decorativo */
+        #cuadro {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 44px 12px 0;
+            background-image: url('fondo.jpg'); /* Imagen de fondo decorativa */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Estilo de los textos principales */
+        h1 {
+            font-size: 48px;
+            color: #333;
+            text-align: center;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 20px;
+            color: #555;
+            text-align: center;
+            max-width: 600px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        /* Imagen en la parte superior derecha */
+        .top-right-image {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+        }
+
+        .top-right-image img {
+            width: 100px; /* Ajusta el tamaño de la imagen */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        /* Diseño adaptativo (Responsive) */
+        @media (max-width: 900px) {
+            .Menu li:first-child a {
+                display: none;
+            }
+
+            .Menu li:first-child:after {
+                content: "\f015";
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 40px;
+                line-height: 60px;
+                color: white;
+                transition: 2s;
+            }
+
+            .Menu li:first-child:hover {
+                background-color: #FFFFFF;
+            }
+
+            .Menu li:first-child:hover:after {
+                color: #FFFFFF;
+            }
+
+            .top-right-image img {
+                width: 80px; /* Reduce el tamaño en pantallas más pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Imagen en la parte superior derecha -->
+    <div class="top-right-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNLvvvSbrg_Yqsp8X5seoilALXCTg8VmoUXw&s" alt="Logo Divino Salvador">
+    </div>
+
+    <center> <h1>RAYOS GAMMA</h1> </center>
+    
+    <!-- Menú de navegación -->
+    <nav class="Menu">
+        <ul>
+            <li><a href="segunda.html" class="pagprinci">Inicio</a></li>
+            <li><a href="tercera.html">Contexto de investigación.</a></li>
+            <li><a href="pagina web.html">Resultados</a></li>
+            <li><a href="#">Conclusiones.</a></li>
+            <li><a href="#">Relevancias</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div id="cuadro">
+        <div>
+            <h1>Bienvenido a mi artículo de investigación</h1>
+            <p>Este proyecto busca analizar temas claves en el campo de la astrofísica utilizando una metodología rigurosa y fuentes confiables. Explora las secciones para aprender más.</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+

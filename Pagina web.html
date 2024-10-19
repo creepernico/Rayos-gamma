@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RAYOS GAMMA</title>
+    <link href="WEB.jpeg" rel="ICON">
+    <link rel="icon" href="https://www.eleconomista.com.mx/__export/1699993861339/sites/eleconomista/img/2023/11/14/nasa_estallido_cortesia.png_842213573.png" type="image/x-icon">
+    <style>
+        /* General */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f0f4f8; /* Fondo pastel suave */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Barra de navegación */
+        .Menu {
+            background-color: #a3c9f1; /* Color pastel suave */
+            padding-bottom: 22px;
+            width: 100%;
+            margin: 0 auto;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        .Menu ul {
+            list-style: none;
+            display: flex;
+            justify-content: center; /* Centra el menú */
+            align-items: center;
+            background-color: #eec7e9; /* Verde pastel */
+            border-radius: 40px;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .Menu li {
+            flex: 1;
+        }
+
+        .Menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 18px 20px;
+            font-size: 20px;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .Menu a:hover {
+            background-color: #f7d6e0; /* Rosa pastel */
+            color: #333;
+            padding: 18px 22px;
+        }
+
+        .Menu .pagprinci {
+            background-color: #4e91d4; /* Color azul pastel */
+            text-shadow: 0.5px 0px 0px black;
+        }
+
+        .Menu .pagprinci:hover {
+            text-shadow: none;
+        }
+
+        /* Fondo decorativo */
+        #cuadro {
+            margin: 0 auto;
+            padding: 20px 12px 0; /* Ajustar padding */
+            background-image: url('fondo.jpg'); /* Imagen de fondo decorativa */
+            background-size: cover;
+            background-position: center;
+            height: auto; /* Ajustar altura automáticamente */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Alinear elementos al inicio */
+        }
+
+        /* Estilo de los textos principales */
+        h1 {
+            font-size: 48px;
+            color: #333;
+            text-align: center; /* Centrar el título */
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Asegurarse de que ocupe el ancho completo */
+            margin: 20px 0; /* Espaciado arriba y abajo */
+        }
+
+        /* Estilo para el subtítulo de Resultados */
+        .resultado-titulo {
+            font-size: 36px;
+            color: #333;
+            text-align: left; /* Alineado a la izquierda */
+            width: auto; /* Ancho automático para que se ajuste al contenido */
+            margin: 0 20px 20px 0; /* Espaciado */
+        }
+
+        p {
+            font-size: 20px;
+            color: #555;
+            text-align: left; /* Alineado a la izquierda */
+            max-width: 600px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        /* Diseño adaptativo (Responsive) */
+        @media (max-width: 900px) {
+            .Menu li:first-child a {
+                display: none;
+            }
+
+            .Menu li:first-child:after {
+                content: "\f015";
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 40px;
+                line-height: 60px;
+                color: white;
+                transition: 2s;
+            }
+
+            .Menu li:first-child:hover {
+                background-color: #FFFFFF;
+            }
+
+            .Menu li:first-child:hover:after {
+                color: #FFFFFF;
+            }
+        }
+
+        /* Estilo para el contenedor de resultados y gráfica */
+        #resultados-grafica {
+            display: flex;
+            justify-content: space-between; /* Espacio entre resultados y gráfica */
+            align-items: flex-start; /* Alinear al inicio */
+            width: 100%; /* Asegurarse de que ocupe el ancho completo */
+            margin-top: 20px; /* Espacio superior */
+        }
+
+        /* Estilo para la gráfica */
+        #grafica-container {
+            display: flex;
+            flex-direction: column; /* Colocar imagen y gráfica en columna */
+            align-items: center; /* Alinear al centro */
+            margin-left: 20px; /* Espacio a la izquierda */
+        }
+
+        #grafica {
+            max-width: 200px; /* Tamaño más pequeño para la gráfica */
+            height: auto;
+            margin-bottom: 10px; /* Espacio debajo de la gráfica */
+        }
+
+        #imagen {
+            max-width: 500px; /* Tamaño más pequeño para la imagen */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>RAYOS GAMMA</h1></center>
+
+    <!-- Menú de navegación -->
+    <nav class="Menu">
+        <ul>
+            <li><a href="segunda.html" class="pagprinci">Inicio</a></li>
+            <li><a href="tercera.html">Contexto de investigación.</a></li>
+            <li><a href="pagina_web.html">Resultados.</a></li>
+            <li><a href="pagina_web.html">Conclusiones.</a></li>
+            <li><a href="#">Relevancia.</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div id="cuadro">
+        <div id="resultados-grafica">
+            <div style="flex: 1;"> <!-- Espacio para el texto de resultados -->
+                <h1 class="resultado-titulo">Resultados</h1>
+                <p>Este proyecto busca analizar temas claves en el campo de la astrofísica utilizando una metodología rigurosa y fuentes confiables. Explora las secciones para aprender más.</p>
+            </div>
+            <div id="grafica-container">
+                <h1>Gráfica</h1>
+                <img id="imagen" src="C:\Users\Kimni\Downloads\image.png" alt="Conocimiento de los estudiantes sobre los rayos gamma">
+                <p>Este proyecto busca analizar temas claves en el campo de la astrofísica utilizando una metodología rigurosa y fuentes confiables. Explora las secciones para aprender más.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
